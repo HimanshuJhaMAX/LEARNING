@@ -5,4 +5,3 @@ total=0
 for add in [num1,num2]:
     total+=add
 print(f"Total: {total}")
-               
