@@ -25,7 +25,7 @@ MATRIX = [
     [0,0]
     ] 
 
-print("\nThe value of matrix after addition is :")   
+print("\nThe value of matrix after multiplication is :")   
 for X in range(2):
     for Y in range(2):
         MATRIX[X][Y] += matrix1[X][Y] * matrix2[X][Y]
