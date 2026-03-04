@@ -1,10 +1,26 @@
-customer = {
-    "name": "Himanshu Jha",
+# Creating a dictionary
+student = {
+    "name": "Rahul",
+    "roll_no": 12,
     "age": 18,
-    "is_verified": True
+    "course": "BSc CSIT"
 }
-print(customer["name"])
-print(customer.get("birthday" , "No such data is available"))
-# For adding new values
-customer ["gender"] = "Male"
-print(customer["gender"])
+
+# Printing the whole dictionary
+print("Student Details:", student)
+
+# Accessing values using keys
+print("Name:", student["name"])
+print("Roll Number:", student["roll_no"])
+
+# Adding a new key-value pair
+student["grade"] = "A"
+
+# Updating an existing value
+student["age"] = 19
+
+# Removing a key-value pair
+del student["course"]
+
+# Printing updated dictionary
+print("Updated Student Details:", student)
