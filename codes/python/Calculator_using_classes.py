@@ -10,8 +10,8 @@ class Calculator:
     
 
 calculate = Calculator()
-a = int(input("Enter num"))
-b = int(input("Enter num"))
-print(calculate.add(a,b))
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print(f"The addition of {a} and {b} is {calculate.add(a,b)}")
 print(calculate.sub(a,b))
 print(calculate.multiply(a,b))
