@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folder Image Animator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <div class="panel-copy">
+        <h1>Folder Image Animator</h1>
+        <p>Select a local folder and play its images as an animated slideshow.</p>
+      </div>
+
+      <label class="picker">
+        <span>Choose image folder</span>
+        <input id="folderInput" type="file" webkitdirectory directory multiple accept="image/*">
+      </label>
+
+      <div class="controls">
+        <label>
+          <span>Animation</span>
+          <select id="animationSelect">
+            <option value="fade">Fade</option>
+            <option value="slide">Slide</option>
+            <option value="zoom">Zoom</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Interval</span>
+          <input id="speedRange" type="range" min="1000" max="10000" step="500" value="3000">
+          <strong id="speedValue">3.0s</strong>
+        </label>
+      </div>
+
+      <div class="button-row">
+        <button id="playPauseBtn" type="button" disabled>Play</button>
+        <button id="prevBtn" type="button" disabled>Previous</button>
+        <button id="nextBtn" type="button" disabled>Next</button>
+      </div>
+
+      <div class="status">
+        <p id="folderName">No folder selected.</p>
+        <p id="imageCount">0 images loaded.</p>
+      </div>
+    </section>
+
+    <section class="viewer">
+      <div id="stage" class="stage animation-fade">
+        <img id="currentImage" alt="Selected slideshow image">
+      </div>
+      <p class="hint">
+        Browser security does not allow websites to freely browse any path on your computer,
+        so this app uses a folder picker to access the images you choose.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
