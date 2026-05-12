@@ -10,7 +10,7 @@ int main()
     ch=getche();
     printf("\nYou pressed :%c");
     printf("\nEnter a character using getchar():");
-    ch = getche();
+    ch = getchar();
     printf("\nYou entered:%c",ch);
     return 0;
 }
